@@ -10,7 +10,7 @@ func Eval(args ...string) error {
 
 	output, err := cmd.CombinedOutput()
 	if err != nil {
-		return fmt.Errorf("error executing command: %v", err)
+		return fmt.Errorf("cannot execute command")
 	}
 	fmt.Printf("Command output: %s\n", output)
 	return nil
